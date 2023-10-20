@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Сортировка пользователей</title>
 </head>
+
 <body>
     <?php
 
@@ -50,4 +52,5 @@
         ?>
     </table>
 </body>
+
 </html>
