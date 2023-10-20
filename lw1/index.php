@@ -10,12 +10,11 @@
     include 'userservise.php';
 
 
-    // Пример данных
-    $user1 = new User('Пользователь1', 'qwerty', new DateTime('1990-05-15'));
-    $user2 = new User('Пользователь12', 'qwerty', new DateTime('1985-12-03'));
-    $user3 = new User('Пользователь123', 'qwerty', new DateTime('1995-02-20'));
+    $user1 = new User('Пользователь1', 'qwerty123', '1990-05-15');
+    $user2 = new User('Пользователь12', 'qwerty456', '1985-12-03');
+    $user3 = new User('Пользователь123', 'qwerty789', '1995-02-20');
 
-    $users = [$user1, $user2, $user3];
+    $users = [$user1, $user2, $user3, $user4];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST["sort_username"])) {
@@ -40,11 +39,13 @@
         </tr>
         <?php
         foreach ($users as $user) {
-            echo "<tr>";
-            echo "<td>" . $user->username . "</td>";
-            echo "<td>" . $user->password . "</td>";
-            echo "<td>" . $user->birthday->format('Y-m-d') . "</td>";
-            echo "</tr>";
+            if ($user->birthday !== null) {
+                echo "<tr>";
+                echo "<td>" . $user->username . "</td>";
+                echo "<td>" . $user->password . "</td>";
+                echo "<td>" . $user->birthday->format('Y-m-d') . "</td>";
+                echo "</tr>";
+            }
         }
         ?>
     </table>
