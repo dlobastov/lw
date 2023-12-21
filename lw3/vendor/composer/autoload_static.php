@@ -6,25 +6,25 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit288f21fbc026bc1a9662176ae60da0dc
 {
-    public static $files = array (
+    public static $files = array(
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
     );
 
-    public static $prefixLengthsPsr4 = array (
-        'Y' => 
-        array (
+    public static $prefixLengthsPsr4 = array(
+        'Y' =>
+        array(
             'Your\\Namespace\\' => 15,
         ),
     );
 
-    public static $prefixDirsPsr4 = array (
-        'Your\\Namespace\\' => 
-        array (
+    public static $prefixDirsPsr4 = array(
+        'Your\\Namespace\\' =>
+        array(
             0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
-    public static $classMap = array (
+    public static $classMap = array(
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
@@ -34,7 +34,6 @@ class ComposerStaticInit288f21fbc026bc1a9662176ae60da0dc
             $loader->prefixLengthsPsr4 = ComposerStaticInit288f21fbc026bc1a9662176ae60da0dc::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit288f21fbc026bc1a9662176ae60da0dc::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit288f21fbc026bc1a9662176ae60da0dc::$classMap;
-
         }, null, ClassLoader::class);
     }
 }

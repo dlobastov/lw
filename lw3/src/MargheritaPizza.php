@@ -1,10 +1,13 @@
 <?php
+
 namespace Your\Namespace;
 
-class MargheritaPizza extends Pizza {
+class MargheritaPizza extends Pizza
+{
     protected $name = 'Margherita';
 
-    public function prepare() {
+    public function prepare()
+    {
         echo "Началась готовка пиццы {$this->name}\n";
         echo "Добавлен соус {$this->sauce}\n";
         echo "Добавлены топпинги: " . implode(", ", $this->toppings) . "\n";

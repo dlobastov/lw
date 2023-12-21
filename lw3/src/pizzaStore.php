@@ -2,10 +2,12 @@
 
 namespace Your\Namespace;
 
-abstract class PizzaStore {
+abstract class PizzaStore
+{
     abstract public function createPizza($type): Pizza;
 
-    public function orderPizza($type) {
+    public function orderPizza($type)
+    {
         $pizza = $this->createPizza($type);
 
         $pizza->prepare();
