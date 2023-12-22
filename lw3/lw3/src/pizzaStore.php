@@ -1,6 +1,6 @@
 <?php
 
-namespace Your\Namespace;
+namespace Your\Name;
 
 abstract class PizzaStore {
     abstract public function createPizza($type): Pizza;

@@ -1,8 +1,8 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use Your\Namespace\MargheritaPizzaStore;
-use Your\Namespace\PepperoniPizzaStore;
+use Your\Name\MargheritaPizzaStore;
+use Your\Name\PepperoniPizzaStore;
 
 $pizzaType = $_POST['pizzaType'] ?? '';
 

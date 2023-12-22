@@ -1,5 +1,5 @@
 <?php
-namespace Your\Namespace;
+namespace Your\Name;
 
 abstract class Pizza {
     protected $name;

@@ -1,5 +1,5 @@
 <?php
-namespace Your\Namespace;
+namespace Your\Name;
 
 class MargheritaPizza extends Pizza {
     protected $name = 'Margherita';

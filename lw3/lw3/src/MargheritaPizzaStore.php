@@ -1,5 +1,5 @@
 <?php
-namespace Your\Namespace;
+namespace Your\Name;
 
 class MargheritaPizzaStore extends PizzaStore {
     public function createPizza($type): Pizza {
