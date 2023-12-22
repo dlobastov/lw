@@ -1,8 +1,10 @@
 <?php
 namespace Your\Name;
 
-class MargheritaPizzaStore extends PizzaStore {
-    public function createPizza($type): Pizza {
+class MargheritaPizzaStore extends PizzaStore
+{
+    public function createPizza($type): Pizza
+    {
         switch ($type) {
             case 'margherita':
                 return new MargheritaPizza();
