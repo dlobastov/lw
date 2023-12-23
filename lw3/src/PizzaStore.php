@@ -1,11 +1,12 @@
 <?php
-
 namespace Your\Name;
 
-abstract class PizzaStore {
+abstract class PizzaStore
+{
     abstract public function createPizza(string $type): Pizza;
 
-    public function orderPizza($type) {
+    public function orderPizza(string $type): void
+    {
         $pizza = $this->createPizza($type);
 
         $pizza->prepare();

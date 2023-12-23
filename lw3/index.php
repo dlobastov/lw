@@ -15,8 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $pizzaType !== '') {
         die("Неизвестный тип пиццы: $pizzaType");
     }
 
-    // Явное указание типа аргумента $type в методе orderPizza
-    $pizzaStore->orderPizza((string)$pizzaType);
+    $pizzaStore->orderPizza((string) $pizzaType);
 
 } else {
     ?>

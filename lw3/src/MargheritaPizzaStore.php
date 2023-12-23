@@ -7,7 +7,8 @@ class MargheritaPizzaStore extends PizzaStore
     {
         switch ($type) {
             case 'margherita':
-                return new MargheritaPizza();
+                $pizza = new MargheritaPizza();
+                return $pizza;
             default:
                 throw new \InvalidArgumentException("Неизвестный тип пиццы: $type");
         }
