@@ -5,7 +5,7 @@ abstract class Pizza
 {
     protected string $name;
     protected string $sauce;
-    protected string $toppings = [];
+    protected int $toppings = [];
     abstract public function prepare();
     public function cut(): void
     {
