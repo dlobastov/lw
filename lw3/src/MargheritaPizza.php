@@ -3,7 +3,7 @@ namespace Your\Name;
 
 class MargheritaPizza extends Pizza
 {
-    protected $name = 'Margherita';
+    protected string $name = 'Margherita';
 
     public function prepare()
     {

@@ -3,9 +3,9 @@ namespace Your\Name;
 
 abstract class Pizza
 {
-    protected $name;
-    protected $sauce;
-    protected $toppings = [];
+    protected string $name;
+    protected string $sauce;
+    protected string $toppings = [];
     abstract public function prepare();
     public function cut(): void
     {
