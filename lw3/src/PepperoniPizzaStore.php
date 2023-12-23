@@ -3,7 +3,7 @@ namespace Your\Name;
 
 class PepperoniPizzaStore extends PizzaStore
 {
-    public function createPizza($type): Pizza
+    public function createPizza(string $type): Pizza
     {
         switch ($type) {
             case 'pepperoni':
